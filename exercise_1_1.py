@@ -1,8 +1,10 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb  7 11:32:51 2018
+#Make the square red instead of blue
 
-@author: misty
-"""
-
+import sys
+from psychopy import visual, core, event
+ 
+win = visual.Window([400,400],color="black", units='pix') 
+square = visual.Rect(win,lineColor="black",fillColor="red",size=[100,100]) 
+square.draw() 
+win.flip() 
+core.wait(.5) 
